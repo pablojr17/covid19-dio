@@ -28,7 +28,7 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
     navigator.share({
       title: `Dados do Covid19 - ${country}`,
       text: textCovid19,
-      url: 'https://co vid19dio.netlify.app/'
+      url: 'https://covid19dio.netlify.app/'
     })
   }
 
