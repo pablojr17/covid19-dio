@@ -18,7 +18,11 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
     </MenuItem>
   )
 
-  const textCovid19 = `País: ${country} - Recuperados: ${recovered} - Ultima atualização: ${updateAt}`;
+  let capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1)
+  const textCovid19 = `País: ${capitalizedCountry} 
+      - Casos: ${cases} 
+      - Recuperados: ${recovered}
+      - Ultima atualização: ${updateAt}`;
 
   const copyInfo = () => {
     navigator.clipboard.writeText(textCovid19)
